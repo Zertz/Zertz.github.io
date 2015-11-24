@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Hello, I am Pier-Luc
+email: hello@pierluc.rocks
+description: >
+  Love Angular.js, Node.js, MongoDB and everything JavaScript.
+baseurl: ""
+url: "http://pierluc.rocks"
+twitter_username: Zertz
+github_username: Zertz
+
+# Build settings
+markdown: kramdown
