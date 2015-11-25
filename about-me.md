@@ -55,4 +55,4 @@ Customer
 
 ## Internet fame
 
-You can find me as Zertz on {% include icon-github.html username="Zertz" %} and {% include icon-twitter.html username="Zertz" %}
+You can find me as Zertz on {% include icon-github.html username="Zertz" icon="false" %} and {% include icon-twitter.html username="Zertz" icon="false" %}
