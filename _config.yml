@@ -14,6 +14,7 @@ baseurl: ""
 url: "http://pierluc.rocks"
 twitter_username: Zertz
 github_username: Zertz
+stackoverflow_username: 1779688
 
 # Build settings
 markdown: kramdown
