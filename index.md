@@ -1,13 +1,20 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me
 ---
 
 I studied in electrical engineering in college, where I learned quite a few things I can't remember today. I am currently based in Magog,
-a small-ish city east of Montreal with plenty of beautiful roads to ride that sweet cyclocross. Quite tall, mostly self-taught, always
+a smallish town east of Montreal with plenty of beautiful roads to ride that sweet cyclocross. Quite tall, mostly self-taught, always
 thriving to learn, probably listening to music and usually available for a drink. Open to remote work and will consider moving for an
 awesome opportunity.
+
+## Things I enjoy doing
+
+- Riding my bike
+- Drinking lattes
+- Listening to music
+- Contributing to the dev community
+- Reading tech articles
 
 ## Technologies I know & love
 
@@ -16,9 +23,9 @@ awesome opportunity.
 - Grunt
 - GitHub
 
-## Cool things I plan to dabble with
+## Cool things I want to dabble with
 
-- ES6/7, React, Ionic
+- ES6/7, React, Ionic, Meteor
 
 ## Stuff I've worked with
 
