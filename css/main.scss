@@ -6,33 +6,78 @@
 
 
 // Our variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 300;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$base-font-size:    16px;
+$base-font-weight:  300;
+$small-font-size:   $base-font-size * 0.875;
+$base-line-height:  1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:      30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$brand-color-light: lighten($brand-color, 45%);
+$text-color:      #2e2e2c;
+$background-color:#fdfdfd;
+$brand-color:     #2a7ae2;
+$brand-color-light: lighten($brand-color, 25%);
 $brand-color-dark:  darken($brand-color, 25%);
 
-$plg-color: rgba(235, 245, 235, 1);
+$js-color:        #f3df49;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 25%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:      #2e2e2c;
+$grey-color-light:  lighten($grey-color, 25%);
+$grey-color-dark:   darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    900px;
+$content-width:     900px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:           600px;
+$on-laptop:         800px;
 
+$breakpoints: (
+  small:  480px,
+  medium: 768px,
+  large:  1024px,
+  xlarge: 1200px
+);
 
+$h1-font-sizes: (
+  null:   3em,
+  small:  4em,
+  medium: 5em,
+  large:  6em,
+  xlarge: 7em
+);
+
+$h2-font-sizes: (
+  null:   1em,
+  small:  1.09em,
+  medium: 1.75em,
+  large:  2em,
+  xlarge: 2em
+);
+
+$h3-font-sizes: (
+  null:   2em,
+  small:  3em,
+  medium: 4em,
+  large:  6em,
+  xlarge: 6em
+);
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -46,8 +91,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

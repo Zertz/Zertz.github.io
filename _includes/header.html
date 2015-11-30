@@ -3,20 +3,18 @@
   <div class="wrapper">
 
     <nav class="site-nav">
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+      {% endfor %}
     </nav>
 
-    <h2 class="site-hello">Hello,</h2>
+    <h3 class="site-hello">Hello,</h3>
 
     <h1 class="site-title">I am Pier-Luc.</h1>
 
-    <h2>JavaScript Developer &middot; Always thriving to learn</h2>
+    <h2 class="site-description">{{ site.description }}</h2>
 
   </div>
 
