@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+permalink: /about/
 ---
 
 I studied in electrical engineering in college, where I learned quite a few things I can't remember today. I am currently based in Magog,
