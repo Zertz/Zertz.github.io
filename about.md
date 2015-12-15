@@ -40,29 +40,27 @@ awesome opportunity.
 
 ### Sport Chrono
 
-This project started out with the goal of streaming live results during sports events, which quickly led us to adopt Node.js with its
-powerful event-driven mantra. Extremely satisfied with the results, this would soon become the core of the entire registration and timing
-platform.
+Developer tasked of building and improving an existing set of race timing software composed of a C# .NET desktop application and a web
+platform hacked on top of a mix of WordPress and vanilla PHP. I migrated customer-facing features over to a modern and scalable stack. I
+put together a development workflow using version control and continuous integration, updating the platform in stages, allowing for quick
+deployments.
 
 ### FluidApps
 
-The relationship I developed with Sport Chrono and the experience I gained led us to found FluidApps, where I developed a web app for
-non-profits.
+Initially the sole developer, I designed and architected a platform for non-profits to raise money through a crowdfunding application, an
+administrative dashboard and the automation of tedious tasks such as generating donation receipts and financial reports. With the
+platform’s well established core foundation, our customers were able to successfully reach and often exceed their objective.
 
 ---
 
-## Open source
+## Open source and community
 
-I have collaborated on some cool open source projects including express-restify-mongoose, stripe-chainable, cloudcp, bootstrap-horizon and
-a few more.
+As a core contributor to express-restify-mongoose, I have learned much from refactoring it from its initial state as a monolithic project
+to a modular and well tested framework. Since my first contributions, it has grown from about 175 stars to over 325. I also maintain a few
+modules, including stripe-history, cloudcp, ng-range-filter and bootstrap-horizon. I have also had the opportunity to attend
+NodeInteractive 2015, which was a fantastic event organized by the newly formed Node.js Foundation.
 
 All of them are available on [npm](https://www.npmjs.com/~zertz).
-
----
-
-## Places I've worked before
-
-Customer
 
 ---
 
